@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/layout/vendor/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="/layout/css/giantswarm.css">
+        <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300,700|Roboto:100,200,300,700,300italic|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
+                <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
+                    <script type="text/template">
+<!-- .slide: class="centered" -->
+# Giant Swarm Kubernetes Training Day
+
+by Tobias Bradtke & Puja Abbassi
+
+PIC GIANTSWARM
+PIC KUBERNETES
+
+---
+
+# WiFi
+
+## SSID: `RBC giantswarm`
+## PWD: `speedline`
+
+---
+
+# Agenda
+
+1. Kubernetes Overview
+2. Running Containers and Exposing Services I
+3. Running Containers and Exposing Services II
+4. Monitoring and Logging <!-- .element: class="fragment" -->
+5. Rolling Updates & Multiple Environments <!-- .element: class="fragment" -->
+6. Outlook <!-- .element: class="fragment" -->
+
+---
+
+# Croissants, Coffee, and Introductions
+
+PIC COFFEE
+                    </script>
+                </section>
+            </div>
+        </div>
+        <script src="/layout/vendor/reveal.js/lib/js/head.min.js"></script>
+        <script src="/layout/vendor/reveal.js/js/reveal.js"></script>
+        <script type="text/javascript">
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: false,
+                center: true,
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: '/layout/vendor/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: '/layout/vendor/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '/layout/vendor/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '/layout/vendor/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: '/layout/vendor/reveal.js/plugin/notes/notes.js' }
+                ]
+            });
+        </script>
+    </body>
+</html>

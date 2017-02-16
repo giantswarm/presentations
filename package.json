@@ -1,0 +1,17 @@
+{
+  "name": "presentations",
+  "version": "1.0.0",
+  "description": "Giant Swarm's private presentation repository.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-rename": "^1.2.2",
+    "phantom": "^4.0.0"
+  }
+}
