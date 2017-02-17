@@ -1,3 +1,5 @@
+# Presentations
+
 Giant Swarm's private presentation repository.
 
 This repository contains presentations as mark down files and tooling
@@ -14,7 +16,7 @@ some grouping and organization.
 If you want to edit the look and feel of the presentations then take a peak in
 the `layout` folder.
 
-# Getting started
+## Getting started
 
 Make sure you have `nodejs` installed, then just `npm install`
 
