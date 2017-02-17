@@ -26,12 +26,12 @@ gulp.task('html', function(){
   .pipe(gulp.dest('exports/layout'));
 
   return gulp.src('content/*/**.md')
-    .pipe(templatePlugin)
+    .pipe(templatePlugin) // This is what places the markdown into the html layout
     .pipe(rename(function (path) {
       path.dirname += "/" + path.basename;
+      path.basename = "index";
       path.extname = ".html"
     }))
-    // .pipe(ext_replace('.html'))
     .pipe(gulp.dest('exports'))
 });
 

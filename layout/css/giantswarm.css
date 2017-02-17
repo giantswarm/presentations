@@ -1,12 +1,10 @@
-.reveal a {
-  line-height: 1.3em; }
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
   background-color: #2b85bc;
   background-size:  cover;
+  color:  #fff;
 }
 
 .reveal {
@@ -57,7 +55,7 @@ body {
 
 .reveal h1 {
   font-family:  "Roboto Slab";
-  font-size: 2em; }
+  font-size: 1.5em; }
 
 .reveal h2 {
   font-size: 1.1em; }
@@ -168,7 +166,7 @@ body {
   word-wrap: normal; }
 
 .reveal table {
-  margin: auto;
+  margin: 0;
   border-collapse: collapse;
   border-spacing: 0; }
 
@@ -180,6 +178,21 @@ body {
   text-align: left;
   padding: 0.2em 0.5em 0.2em 0.5em;
   border-bottom: 1px solid; }
+
+.noborder table th,
+.noborder table th, {
+  border-bottom:  0px;
+}
+
+.reveal table.centered th,
+.reveal table.centered td{
+  text-align:  center;
+}
+
+.reveal table.no-borders th,
+.reveal table.no-borders td{
+  border-bottom:  0px;
+}
 
 .reveal table th[align="center"],
 .reveal table td[align="center"] {
@@ -208,18 +221,30 @@ body {
 .reveal small * {
   vertical-align: top; }
 
+.reveal ul li {
+  margin-bottom:  10px;
+}
+
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a {
-  color: #3b759e;
+  color: #ccc;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
+.reveal .small {
+  font-size:  28px;
+}
+
+.reveal .block {
+  display:  block;
+}
+
 .reveal a:hover {
-  color: #74a7cb;
+  color: #fff;
   text-shadow: none;
   border: none; }
 
@@ -230,11 +255,28 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
+
+.reveal section.right-image img {
+  float:  right;
+  position:  relative;
+  top:  -30px; /* Counter act the inevitable margin that markdown's p tag adds around the image */
+}
+
+.reveal section.right-image > ul {
+  float:  left;
+  font-size:  30px;
+  width:  45%;
+}
+
+.reveal section.right-image p {
+  float:  left;
+  width: 50%;
+}
+
 .reveal section img {
   margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  max-width:  100%;
+}
 
 .reveal section img.plain {
   border: 0;

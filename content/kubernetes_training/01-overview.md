@@ -1,12 +1,3 @@
-layout: true
-class: giantswarm, blue
-<div class="header"><img src="../img/giantswarm.png" style="height: 50px;"/></div>
-<div class="footer"><span>Running Containers and Exposing Services I &copy; CC Attribution-ShareAlike 3.0</span></div>
-
----
-
-class: center, middle, giantswarm, blue
-
 # Kubernetes Overview
 
 ---
@@ -15,9 +6,22 @@ class: center, middle, giantswarm, blue
 
 Kubernetes is a platform for managing containerized distributed applications based on the microservices architecture.
 
-![Scalable](../img/scalable.png) | ![Blocks](../img/blocks.png) | ![Suitcase](../img/suitcase.png)
-------------- | ------------- | -------------
-Planet Scale | Never Outgrow | Run Anywhere
+<table class="centered no-borders">
+  <thead>
+  <tr>
+  <th>![Scalable](/layout/img/scalable.png)</th>
+  <th>![Blocks](/layout/img/blocks.png)</th>
+  <th>![Suitcase](/layout/img/suitcase.png)</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Planet Scale</td>
+    <td>Never Outgrow</td>
+    <td>Run Anywhere</td>
+  </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -46,18 +50,16 @@ Focus on minimizing MTTR instead of MTBF
 # Kubernetes History
 
 Based on 15 years of experience of running production workloads at Google.
-["Borg, Omega, and Kubernetes" March 2016](http://queue.acm.org/detail.cfm?id=2898444)
+["Borg, Omega, and Kubernetes" March 2016](http://queue.acm.org/detail.cfm?id=2898444)<!-- .element: class="small block" -->
 
 Coordination and consensus via Paxos (etcd).
-["Consensus in the Cloud: Paxos Systems Demystified" February 2016](https://www.cse.buffalo.edu/tech-reports/2016-02.pdf)
+["Consensus in the Cloud: Paxos Systems Demystified" February 2016](https://www.cse.buffalo.edu/tech-reports/2016-02.pdf)<!-- .element: class="small block" -->
 
 ---
 
-class: white
-
 # Kubernetes Architecture
 
-.center[.big-pic[![Kubernetes Architecture](../img/architecture.png)]]
+![Kubernetes Architecture](/layout/img/architecture.png)
 
 ---
 
@@ -97,14 +99,11 @@ Self-healing
 
 ---
 
-class: white
-
 # Community
 
-.center[.big-pic[![Kubernetes Community](../img/community.png)]]
+![Kubernetes Community](/layout/img/community.png)
 
-???
-
+Note:
 https://github.com/kubernetes/kubernetes
 
 ~900 Contributors and growing

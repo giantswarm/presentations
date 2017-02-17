@@ -23,6 +23,7 @@ Minikube runs a single-node Kubernetes cluster inside a VM on your laptop
 
 ---
 
+<!-- .slide: class="right-image" -->
 # Pods
 
 - Smallest deployable units of computing
@@ -32,8 +33,11 @@ Minikube runs a single-node Kubernetes cluster inside a VM on your laptop
   - are scheduled together
 - Emphemeral (won't be rescheduled)
 
+![Pods](/layout/img/diagrams/Pods.png)
+
 ---
 
+<!-- .slide: class="right-image" -->
 # Labels & Selectors
 
 - Labels
@@ -42,16 +46,22 @@ Minikube runs a single-node Kubernetes cluster inside a VM on your laptop
 - Selectors
   - Select (group of) objects based on labels
 
+![Labels](/layout/img/diagrams/Labels.png)
+
 ---
 
+<!-- .slide: class="right-image" -->
 # Deployments (& Replica Sets)
 
 - Declarative way of deploying Pods
 - Manages a Replica Set that in turn manages Pods
 - Ensures that the desired number of Pods is running
 
+![Deployments](/layout/img/diagrams/Deployments.png)
+
 ---
 
+<!-- .slide: class="right-image" -->
 # Services
 
 - Abstraction layer on top of Pods
@@ -61,14 +71,13 @@ Minikube runs a single-node Kubernetes cluster inside a VM on your laptop
 - Takes care of simple load balancing
 - Discovery via DNS
 
+![Services](/layout/img/diagrams/Services.png)
+
 ---
 
+<!-- .slide: class="right-image" -->
 # Ingress
 
 An Ingress is a collection of rules that allow inbound connections from outside the cluster to reach the cluster services.
 
-Features
-- Externally-reachable URLs
-- Load balance traffic
-- Terminate SSL
-- Name based virtual hosting
+![Services](/layout/img/diagrams/Ingress.png)

@@ -1,12 +1,3 @@
-layout: true
-class: giantswarm, blue
-<div class="header"><img src="../img/giantswarm.png" style="height: 100px;"/></div>
-<div class="footer"><span>&copy; CC Attribution-ShareAlike 3.0</span></div>
-
----
-
-class: center, middle, giantswarm, blue
-
 # Basic Concepts in Kubernetes II
 
 ---

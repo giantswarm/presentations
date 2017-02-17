@@ -3,8 +3,8 @@
 
 by Tobias Bradtke & Puja Abbassi
 
-PIC GIANTSWARM
-PIC KUBERNETES
+![Giant Swarm](/layout/img/giantswarm.png) <!-- .element: style="width: 100px; margin-right: 50px" -->
+![Kubernetes](/layout/img/kubernetes.png) <!-- .element: style="width: 90px; position: relative; top: -10px" -->
 
 ---
 
@@ -28,4 +28,4 @@ PIC KUBERNETES
 
 # Croissants, Coffee, and Introductions
 
-PIC COFFEE
+![Coffee](/layout/img/coffee.png) <!-- .element: style="width: 150px;" -->
