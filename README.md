@@ -3,11 +3,11 @@
 Giant Swarm's private presentation repository.
 
 This repository contains presentations as mark down files and tooling
-to export them to HTML or PDF.
+to export them to HTML or PDF (PDF export not yet finished).
 
 If you want to present offline, or send a presentation to someone, take a look at
 the exports folder. In it, all presentations are available as a downloadable
-zip file, or pdf files.
+zip file, or pdf files. (Also a lie at the moment, but coming soon)
 
 Take a look in `content` to see what presentations there are. Each presentation
 is contained entirely in one `markdown` file. Subfolders can be used for
