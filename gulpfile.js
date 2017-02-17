@@ -40,27 +40,27 @@ gulp.task('html', function(){
     .pipe(connect.reload());
 });
 
-var phantom = require("phantom");
-var _ph, _page, _outObj;
+// var phantom = require("phantom");
+// var _ph, _page, _outObj;
 
-phantom.create().then(ph => {
-    _ph = ph;
-    return _ph.createPage();
-}).then(page => {
-    _page = page;
-    _page.property('paperSize', {
-        width: '297mm',
-        height: '210mm',
-        margin: '0mm'
-    });
-    return _page.open('https://stackoverflow.com/');
-}).then(status => {
-    _page.render('test.pdf');
-    return _page.property('content')
-}).then(content => {
-    _page.close();
-    _ph.exit();
-}).catch(e => console.log(e));
+// phantom.create().then(ph => {
+//     _ph = ph;
+//     return _ph.createPage();
+// }).then(page => {
+//     _page = page;
+//     _page.property('paperSize', {
+//         width: '297mm',
+//         height: '210mm',
+//         margin: '0mm'
+//     });
+//     return _page.open('https://stackoverflow.com/');
+// }).then(status => {
+//     _page.render('test.pdf');
+//     return _page.property('content')
+// }).then(content => {
+//     _page.close();
+//     _ph.exit();
+// }).catch(e => console.log(e));
 
 // gulp.task('pdf', function(){
 //   return gulp.src('client/templates/*.pug')
@@ -77,7 +77,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function () {
-  return gulp.watch(['./content/*/**', './layout/*/**'], ['build']);
+  return gulp.watch(['./content/*/**', './layout/*/**'], {usePolling: true, interval: 2000 }, ['build']);
 });
 
 gulp.task('reload', function() {
