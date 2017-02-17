@@ -25,7 +25,7 @@ When you want to build the presentations, run `make`
 
 ## Working on slides
 
-If you want to present, you can run `make serve`. It'll start up a webserver at
+If you want to work on slides, you can run `make serve`. It'll start up a webserver at
 `localhost:8000`. Navigate to the slides you want to work on. Any changes
 you make in the `md`'s will cause the slides to rebuild and the browser to refresh.
 
