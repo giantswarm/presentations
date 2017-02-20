@@ -57,9 +57,10 @@ Coordination and consensus via Paxos (etcd).
 
 ---
 
+<!-- .slide: class="centered" -->
 # Kubernetes Architecture
 
-![Kubernetes Architecture](/layout/img/architecture.png)
+![Kubernetes Architecture](/layout/img/diagrams/Architecture.png)<!-- .element: style="width: 80%; margin: auto" -->
 
 ---
 
