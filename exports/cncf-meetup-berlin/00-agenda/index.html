@@ -10,83 +10,39 @@
                 <!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
                 <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
                     <script type="text/template">
-# Basic Concepts in Kubernetes II
+<!-- .slide: class="centered" -->
+
+# Running Kubernetes in Kubernetes
+
+by Timo Derstappen
+
+![Giant Swarm](/layout/img/giantswarm.png) <!-- .element: style="width: 100px; margin-right: 50px" -->
+![Kubernetes](/layout/img/kubernetes.png) <!-- .element: style="width: 90px; position: relative; top: -10px" -->
 
 ---
 
-# Namespaces
+# WiFi
 
-- Also called "virtual clusters"
-- No real isolation by default
-- Just separation
-- Good for keeping order
-- Good for separating environments
-- Can help with isolation
+## SSID: `RBC giantswarm`
+## PWD: `speedline`
 
 ---
 
-# Node Selectors
+# Agenda
 
-- Select a (group of) specific node(s) for pods to be scheduled
-- Selection based on Node labels
-- Nodes can be labeled based on
-  - features
-  - environments
-  - tiers
-  - etc.
-
----
-
-# Config Maps
-
-- Help keeping configuration out of your images and pods
-- Hold configuration in form of
-  - configuration files
-  - environment variables
-  - command line arguments
-- Can inject said configuration into pods
+1. Kubernetes Overview
+2. Running Containers and Exposing Services I
+3. Running Containers and Exposing Services II
+4. Monitoring and Logging
+5. Rolling Updates & Multiple Environments
+6. Outlook
 
 ---
 
-# Secrets
+# Croissants, Coffee, and Introductions
 
-- Similar to Config Maps
-- Hold sensitive information like
-  - passwords
-  - keys
-  - tokens
-- Special type: `imagePullSecrets
-- Are held in `tmpfs` and only on nodes that need them
+![Coffee](/layout/img/coffee.png) <!-- .element: style="width: 150px;" -->
 
----
-
-# Daemon Sets
-
-- Ensures an instance of a pod is running on all nodes
-- Is meant for running daemons like
-  - cluster storage daemons (e.g. Quobyte, glusterd, ceph, etc.)
-  - log collectors (e.g. fluentd or logstash)
-  - monitoring daemons (e.g. Prometheus Node Exporter, collectd, New Relic agent, etc.)
-- Can also use Node Selectors
-
----
-
-# Jobs
-
-- There are three kinds of Jobs:
-  - Non-parallel jobs
-  - Parallel jobs with a fixed completion count
-  - Parallel jobs with a work queue
-
----
-
-# Scheduled Jobs
-
-- Like Jobs but scheduled
-- Two types:
-  - Once at a specified point in time
-  - Repeatedly at a specified point in time
-- Think Cron (format is identical)
                     </script>
                 </section>
             </div>
