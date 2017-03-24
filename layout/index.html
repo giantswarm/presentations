@@ -2,6 +2,15 @@
     <head>
         <link rel="stylesheet" href="/layout/vendor/reveal.js/css/reveal.css">
         <link rel="stylesheet" href="/layout/css/giantswarm.css">
+
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? '/layout/vendor/reveal.js/css/print/pdf.css' : '/layout/vendor/reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
         <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300,700|Roboto:100,200,300,700,300italic|Inconsolata:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
