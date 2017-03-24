@@ -111,8 +111,8 @@ K8s: Kubernetes == Guest cluster
 
 ---
 
-<!-- .slide:  style="text-align: center;" -->
-![Cluster](/layout/img/g8s_controlplane.png)
+<!-- .slide:  style="text-align: center;" data-state="invert" -->
+![Cluster](/layout/img/diagrams/g8s users.png)
 
 ---
 
