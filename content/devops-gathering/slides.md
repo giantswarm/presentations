@@ -24,7 +24,7 @@ by Timo Derstappen
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
 # Background
 
-We manage Kubernetes clusters for customers 24/7. 
+We manage Kubernetes clusters for customers 24/7.
 
 Both on-premises and in the cloud.
 
@@ -66,7 +66,7 @@ Most of the time we run multiple clusters at our customer datacenter as well.
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
 # RBAC, NetworkPolicies FTW
 
-We encourage to use these features and help with integration. 
+We encourage to use these features and help with integration.
 
 * Small clusters make little sense
 * Support while processes need to be adapted
@@ -75,7 +75,7 @@ We encourage to use these features and help with integration.
 ---
 
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
-## Introducing: 
+## Introducing:
 
 # Giantnetes
 
@@ -295,9 +295,9 @@ Create k8s clusters on AWS based on a TPR
 ---
 
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
-# Micro Operators 
+# Micro Operators
 
-* Operators should have single responsibilities. 
+* Operators should have single responsibilities.
 * Keep them simple and maintainable
 
 ---
@@ -322,4 +322,3 @@ Having Giantnetes and all guest clusters running self-hosted will further ease t
 Timo Derstappen
 
 @teemow
-
