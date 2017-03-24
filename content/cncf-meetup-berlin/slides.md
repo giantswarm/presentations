@@ -245,6 +245,36 @@ Within the VM pods certificates are issued for all services running in the VM
 
 ---
 
+<!-- .slide: data-state="invert" data-background-transition="none"-->
+![Cluster](/layout/img/diagrams/operators_and_certs/1.png)
+
+---
+
+<!-- .slide: data-state="invert" data-background-transition="none"-->
+![Cluster](/layout/img/diagrams/operators_and_certs/2.png)
+
+---
+
+<!-- .slide: data-state="invert" data-background-transition="none"-->
+![Cluster](/layout/img/diagrams/operators_and_certs/3.png)
+
+---
+
+<!-- .slide: data-state="invert" data-background-transition="none"-->
+![Cluster](/layout/img/diagrams/operators_and_certs/4.png)
+
+---
+
+<!-- .slide: data-state="invert" data-background-transition="none"-->
+![Cluster](/layout/img/diagrams/operators_and_certs/5.png)
+
+---
+
+<!-- .slide: data-state="invert" data-background-transition="none"-->
+![Cluster](/layout/img/diagrams/operators_and_certs/6.png)
+
+---
+
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom right -50%" -->
 # Overview
 
