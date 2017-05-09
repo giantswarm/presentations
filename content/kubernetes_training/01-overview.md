@@ -4,7 +4,7 @@
 
 # What is Kubernetes
 
-Kubernetes is a platform for managing containerized distributed applications based on the microservices architecture.
+Kubernetes is a platform for automating deployment, scaling, and management containerized distributed applications based on the microservices architecture.
 
 <table class="centered no-borders">
   <thead>
