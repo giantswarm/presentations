@@ -121,20 +121,6 @@ K8s: Kubernetes == Guest cluster
 ---
 
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
-# Networking
-
-* One Flannel server per host
-* One Flannel client per host per cluster
-* Flannel VXLAN backend
-
----
-
-<!-- .slide:  style="text-align: center;" -->
-![Cluster](/layout/img/g8s_networking.png) <!-- .element: style="height: 90%;" -->
-
----
-
-<!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
 # VMs
 
 * Docker container with QEMU tooling
@@ -154,10 +140,39 @@ K8s: Kubernetes == Guest cluster
 ---
 
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
-# Nodes
+# Networking
 
-* NGINX ingress controller running on a specific port on some of the nodes
-* Loadbalancer checks if the ingress controller is listening and sends traffic to it
+* Host cluster: Calico
+* Guest cluster: Flannel / Calico
+
+---
+
+<!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
+# Networking
+
+* One Flannel server per host
+* One Flannel client per host per cluster
+* Flannel VXLAN backend
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/networking/1.png) <!-- .element: style="height: 90%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/networking/2.png) <!-- .element: style="height: 90%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/networking/3.png) <!-- .element: style="height: 90%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/networking/4.png) <!-- .element: style="height: 90%;" -->
 
 ---
 
@@ -219,27 +234,32 @@ Create k8s clusters on AWS based on a TPR
 ---
 
 <!-- .slide:  style="text-align: center;" -->
-![Cluster](/layout/img/operators_and_certs_1.png) <!-- .element: style="width: 80%;" -->
+![Cluster](/layout/img/diagrams/operators_and_certs/1.png) <!-- .element: style="width: 80%;" -->
 
 ---
 
 <!-- .slide:  style="text-align: center;" -->
-![Cluster](/layout/img/operators_and_certs_2.png) <!-- .element: style="width: 80%;" -->
+![Cluster](/layout/img/diagrams/operators_and_certs/2.png) <!-- .element: style="width: 80%;" -->
 
 ---
 
 <!-- .slide:  style="text-align: center;" -->
-![Cluster](/layout/img/operators_and_certs_3.png) <!-- .element: style="width: 80%;" -->
+![Cluster](/layout/img/diagrams/operators_and_certs/3.png) <!-- .element: style="width: 80%;" -->
 
 ---
 
 <!-- .slide:  style="text-align: center;" -->
-![Cluster](/layout/img/operators_and_certs_4.png) <!-- .element: style="width: 80%;" -->
+![Cluster](/layout/img/diagrams/operators_and_certs/4.png) <!-- .element: style="width: 80%;" -->
 
 ---
 
 <!-- .slide:  style="text-align: center;" -->
-![Cluster](/layout/img/operators_and_certs_5.png) <!-- .element: style="width: 80%;" -->
+![Cluster](/layout/img/diagrams/operators_and_certs/5.png) <!-- .element: style="width: 80%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/operators_and_certs/6.png) <!-- .element: style="width: 80%;" -->
 
 ---
 
@@ -254,21 +274,12 @@ Create k8s clusters on AWS based on a TPR
 ---
 
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
-# The CA TPR defines
-
-* TTL
-* Defines roles attached to certificates
-* Allowed Domains
-* Cluster it belongs to
-
----
-
-<!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
 # The Cert TPR defines
 
 * TTL
 * Common Name
 * SANs
+* Cluster / Component
 
 ---
 
