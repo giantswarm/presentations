@@ -70,6 +70,10 @@ Both on bare metal and in the cloud.
 
 ---
 
+<!-- .slide: data-background-image="/layout/img/bread.jpg" -->
+
+---
+
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
 # On-premises KaaS
 
@@ -150,7 +154,7 @@ K8s: Kubernetes == Guest cluster
 
 ---
 
-![Cluster](/layout/img/g8s_controlplane.png)  <!-- .element width="100%" style="padding: 50px; background-color: white;" -->
+![Cluster](/layout/img/g8s_users.png)  <!-- .element style="background-color: white;" -->
 
 ---
 
