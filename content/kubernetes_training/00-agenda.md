@@ -10,8 +10,8 @@ by Tobias Bradtke & Puja Abbassi
 
 # WiFi
 
-## SSID: `RBC giantswarm`
-## PWD: `speedline`
+## SSID: ``
+## PWD: ``
 
 ---
 
@@ -22,7 +22,8 @@ by Tobias Bradtke & Puja Abbassi
 3. Running Containers and Exposing Services II
 4. Monitoring and Logging
 5. Rolling Updates & Multiple Environments
-6. Outlook
+6. Advanced Concepts in Kubernetes
+7. Outlook
 
 ---
 

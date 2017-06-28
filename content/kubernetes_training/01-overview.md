@@ -4,7 +4,7 @@
 
 # What is Kubernetes
 
-Kubernetes is a platform for managing containerized distributed applications based on the microservices architecture.
+Kubernetes is a system for automating deployment, scaling, and management of containerized distributed applications.
 
 <table class="centered no-borders">
   <thead>
@@ -79,24 +79,41 @@ Self-healing
 
 # Kubernetes Features
 
-- co-locating helper processes, facilitating composite applications and preserving the one-application-per-container model,
-- mounting storage systems,
-- distributing secrets,
-- application health checking,
-- replicating application instances,
-- horizontal auto-scaling,
+Automatic binpacking
+- Automatically places containers based on their resource requirements and other constraints. Mix critical and best-effort workloads in order to drive up utilization.
+
+Self-healing
+- Restarts containers that fail, replaces and reschedules containers when nodes die, kills containers that don't respond to your user-defined health check, and doesn't advertise them to clients until they are ready to serve.
 
 ---
 
 # Kubernetes Features continued
 
-- naming and discovery,
-- load balancing,
-- rolling updates,
-- resource monitoring,
-- log access and ingestion,
-- support for introspection and debugging, and
-- identity and authorization.
+Horizontal scaling
+- Scale your application up and down with a simple command, with a UI, or automatically based on CPU usage.
+
+Automated rollouts and rollbacks
+- Kubernetes progressively rolls out changes to your application or its configuration, while monitoring application health to ensure it doesn't kill all your instances at the same time. If something goes wrong, Kubernetes will rollback the change for you.
+
+---
+
+# Kubernetes Features continued
+
+Service discovery and load balancing
+- No need to modify your application. Kubernetes gives containers their own IP addresses and a single DNS name for a set of containers, and can load-balance across them.
+
+Secret and configuration management
+- Deploy and update secrets and application configuration without rebuilding your image and without exposing secrets in your stack configuration.
+
+---
+
+# Kubernetes Features continued
+
+Storage orchestration
+- Automatically mount the storage system of your choice, whether from local storage, a public cloud provider such as GCP or AWS, or a network storage system such as NFS, iSCSI, Gluster, Ceph, Cinder, or Flocker.
+
+Batch execution
+- In addition to services, Kubernetes can manage your batch and CI workloads, replacing containers that fail, if desired.
 
 ---
 
