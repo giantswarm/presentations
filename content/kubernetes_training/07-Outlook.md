@@ -4,20 +4,20 @@
 
 # App Deployments and Reuse
 
-- [Helm](http://blog.kubernetes.io/2016/10/helm-charts-making-it-simple-to-package-and-deploy-apps-on-kubernetes.html)
-- [KPM](https://github.com/coreos/kpm)
-- [Operators](https://coreos.com/blog/introducing-operators.html)
-- [CNR](https://github.com/cn-app-registry/cnr-server)
+- [OperatorKit](https://docs.google.com/document/d/1ChcMp6pnEK13sSwfThKb5UPBYdrJ-3z4qIsnMMoNEKs/edit)
+- [ksonnet/JSonnet](http://ksonnet.heptio.com/)
 - [Service Catalog](https://github.com/kubernetes-incubator/service-catalog)
 - [AppController - statefull app deployments](https://github.com/Mirantis/k8s-AppController)
 - [Templates & Parameterization](https://github.com/kubernetes/kubernetes/blob/master/docs/proposals/templates.md)
+
 
 ---
 
 # Network
 
-- Internal L7
-- Hierarchical Network Policy
+- [Better service routing rules / Internal L7](https://github.com/kubernetes/kubernetes/issues/28443)
+- Hierarchical Network Policy (e.g. Zones like in nuage)
+- [Egress Network Policy](https://github.com/projectcalico/k8s-policy/issues/95)
 - Quality of Service
 
 ---
