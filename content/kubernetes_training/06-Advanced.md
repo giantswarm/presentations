@@ -29,3 +29,5 @@
 # Security & Compliance
 
 - [RBAC and restricting access inside the cluster](https://kubernetes.io/docs/admin/authorization/rbac/)
+- [Pod Security Policies](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
+- [Advanced Audit](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/#advanced-audit)

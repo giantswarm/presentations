@@ -43,7 +43,7 @@
   - passwords
   - keys
   - tokens
-- Special type: `imagePullSecrets
+- Special type: `imagePullSecrets`
 - Are held in `tmpfs` and only on nodes that need them
 
 ---
@@ -68,10 +68,10 @@
 
 ---
 
-# Scheduled Jobs
+# Cron Jobs
 
 - Like Jobs but scheduled
 - Two types:
   - Once at a specified point in time
   - Repeatedly at a specified point in time
-- Think Cron (format is identical)
+- Think good old Cron (format is identical)

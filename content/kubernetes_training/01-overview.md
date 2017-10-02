@@ -52,8 +52,8 @@ Focus on minimizing MTTR instead of MTBF
 Based on 15 years of experience of running production workloads at Google.
 ["Borg, Omega, and Kubernetes" March 2016](http://queue.acm.org/detail.cfm?id=2898444)<!-- .element: class="small block" -->
 
-Coordination and consensus via Paxos (etcd).
-["Consensus in the Cloud: Paxos Systems Demystified" February 2016](https://www.cse.buffalo.edu/tech-reports/2016-02.pdf)<!-- .element: class="small block" -->
+Coordination and consensus via Raft (etcd).
+[In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf)<!-- .element: class="small block" -->
 
 ---
 
