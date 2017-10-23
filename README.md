@@ -32,9 +32,12 @@ cause the slides to rebuild and the browser to refresh.
 
 ## Presenting
 
-You can present either present from the exported files, or from the webserver at `make serve`
+You can present either present from the exported files, or from the webserver at `localhost:8000`
+after running `make serve`.
+
 The exported files might have issues getting to the assets though without a webserver.
 So, exported files are a work in progress.
+
 
 ### Keyboard shortcuts
 
@@ -42,3 +45,15 @@ Key | Description
 ----|------------
 `S` | Open a second window with the speakers view, with notes and a preview of the next slide.
 `ESC` | Go to an overview of all slides.
+
+
+### Reveal.JS Docs
+
+At the end of the day, this is just a helper around reveal.js
+Familiarize yourself with what it is capable of here:
+
+https://github.com/hakimel/reveal.js/
+
+For example if you want to learn more about how to set backgrounds:
+
+https://github.com/hakimel/reveal.js/#slide-backgrounds
