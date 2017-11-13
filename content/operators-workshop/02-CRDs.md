@@ -1,15 +1,15 @@
 # Third Party Resources (Legacy)
 
 - First mechanism for extending Kubernetes
-- Added in 1.2
-- Deprecated in 1.7
-- Removed in 1.8
+- Added in Kubernetes 1.2
+- Deprecated in Kubernetes 1.7
+- Removed in Kubernetes 1.8
 
 ---
 
 # Custom Resource Definition
 
-- Added as beta in 1.7
+- Added in Kubernetes 1.7
 - Reimplemented based on lessons learned from TPRs
 - Namespace or cluster scoped
 - Better pluralization support
