@@ -1,7 +1,7 @@
 # What is an Operator
 
 - An application specific controller that extends the Kubernetes API
-- Manages a CRD (Custom Resource Definition)
+- Manages a CRD (Custom Resource Definition) which replace TPRs (Third Party Resources)
 - CRD stores state and the operator performs operational tasks
 - Pattern first proposed by CoreOS in November 2016
 
