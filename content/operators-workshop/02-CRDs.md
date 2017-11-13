@@ -38,10 +38,8 @@ spec:
 
 ---
 
-# API endpoint
 # Example Custom Resource
 
-- An endpoint is created for the CRD
 ```yaml
 apiVersion: "stable.example.com/v1"
 kind: CronTab
@@ -52,12 +50,25 @@ spec:
   image: my-cron-image
 ```
 
-```
-/apis/containerconf.de/v1/postgresqlconfigs
-```
+---
 
-- Similar to the standard endpoints
+# API endpoints
+
+- Core group endpoint (also know as legacy group)
 
 ```
 /api/v1/pods
 ```
+
+- Named group endpoint
+
+```
+/apis/apps/v1beta1/deployments
+```
+
+- CRD endpoint
+
+```
+/apis/stable.example.com/v1/crontabs
+```
+
