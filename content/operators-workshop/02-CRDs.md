@@ -23,23 +23,34 @@
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: postgresqlconfigs.containerconf.de
+  name: crontabs.stable.example.com
 spec:
-  group: containerconf.de
+  group: stable.example.com
   version: v1
   scope: Namespaced
   names:
-    plural: postgresqlconfigs
-    singular: postgresqlconfig 
-    kind: PostgreSQLConfig
-    shortNames: []
+    plural: crontabs
+    singular: crontab
+    kind: CronTab
+    shortNames:
+    - ct
 ```
 
 ---
 
 # API endpoint
+# Example Custom Resource
 
 - An endpoint is created for the CRD
+```yaml
+apiVersion: "stable.example.com/v1"
+kind: CronTab
+metadata:
+  name: my-cron-object
+spec:
+  cronSpec: "* * * * */5"
+  image: my-cron-image
+```
 
 ```
 /apis/containerconf.de/v1/postgresqlconfigs
