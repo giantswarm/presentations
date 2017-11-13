@@ -72,3 +72,26 @@ spec:
 /apis/stable.example.com/v1/crontabs
 ```
 
+---
+
+# Finalizers
+
+- Available in Kubernetes 1.8
+- Allow controllers to implement asynchronous pre-delete hooks
+
+```
+apiVersion: "stable.example.com/v1"
+kind: CronTab
+metadata:
+  name: my-cron-object
+  finalizers:
+  - finalizer.stable.example.com
+```
+
+---
+
+# Validation
+
+- Alpha in Kubernetes 1.8
+- Allows validation of custom objects using OpenAPI V3 schema
+
