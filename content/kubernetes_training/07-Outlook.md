@@ -48,3 +48,11 @@
 # Scaling & Resilience
 
 - [Federation](https://github.com/kubernetes/kubernetes/blob/master/docs/proposals/federation.md)
+
+---
+
+# Stay in Touch
+
+- https://github.com/giantswarm/presentations/tree/master/content/kubernetes_training
+- Tobias Bradtke [@webwurst](https://twitter.com/webwurst)
+- Puja Abbassi [@puja108](https://twitter.com/puja108)
