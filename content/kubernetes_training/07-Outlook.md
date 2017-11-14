@@ -53,6 +53,7 @@
 
 # Stay in Touch
 
-- https://github.com/giantswarm/presentations/
+- [Slides](https://github.com/giantswarm/presentations/tree/master/content/kubernetes_training)
+- [Hands-On](https://github.com/giantswarm/kubernetes-training/tree/master/hands-on)
 - Tobias Bradtke [@webwurst](https://twitter.com/webwurst)
 - Puja Abbassi [@puja108](https://twitter.com/puja108)
