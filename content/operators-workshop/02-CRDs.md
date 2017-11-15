@@ -14,6 +14,7 @@
 - Namespace or cluster scoped
 - Better pluralization support
 - Shortname support
+- Finalizers
 
 ---
 
@@ -95,3 +96,19 @@ metadata:
 - Alpha in Kubernetes 1.8
 - Allows validation of custom objects using OpenAPI V3 schema
 
+---
+
+```
+spec:
+  validation:
+   # openAPIV3Schema is the schema for validating custom objects.
+    openAPIV3Schema:
+      properties:
+        spec:
+          properties:
+            cronSpec:
+            replicas:
+              type: integer
+              minimum: 1
+              maximum: 10
+```
