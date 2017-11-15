@@ -23,3 +23,23 @@
 - kvm-operator
 - cert-operator
 - draughtsman-operator
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/kvm-operator/1.png) <!-- .element: style="width: 80%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/kvm-operator/2.png) <!-- .element: style="width: 80%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/kvm-operator/3.png) <!-- .element: style="width: 80%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/kvm-operator/4.png) <!-- .element: style="width: 80%;" -->
