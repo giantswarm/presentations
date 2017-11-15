@@ -3,10 +3,16 @@
 
 ---
 
+# Create CRD
+
+- Connect to Kubernetes API
+- Create PostgreSQLConfig CRD via API
+- Wait for CRD to be created
+
+--- 
+
 # Reconciliation loop
 
-- Create PostgreSQLConfig CRD via REST API
-- Wait for CRD to be created
 - Start reconciliation loop
 - List custom objects and reconcile towards their state
 
