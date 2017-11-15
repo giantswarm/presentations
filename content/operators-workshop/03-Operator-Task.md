@@ -30,4 +30,11 @@
 # postgresqlops
 
 - [github.com/giantswarm/operator-workshop/postgresqlops](https://github.com/giantswarm/operator-workshop/blob/master/postgresqlops/postgresqlops.go)
-- Go package provides database access
+- Go package provides database access methods
+
+# customobject.Resource
+
+- [customobject](https://github.com/giantswarm/operator-workshop/blob/solution1/customobject/resource.go)
+- Go package applies database changes
+- Resource.EnsureCreate
+- Resource.EnsureDelete
