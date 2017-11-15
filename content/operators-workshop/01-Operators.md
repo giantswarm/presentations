@@ -11,7 +11,6 @@
 
 - Etcd
 - Prometheus
-- Elastic Search
 - Rook
 
 ---
@@ -22,7 +21,6 @@
 - aws-operator
 - kvm-operator
 - cert-operator
-- draughtsman-operator
 
 ---
 
