@@ -9,7 +9,7 @@
 - Create PostgreSQLConfig CRD via API
 - Wait for CRD to be created
 
---- 
+---
 
 # Reconciliation loop
 
@@ -18,7 +18,7 @@
 
 ---
 
-# Connecting to Minikube
+# Connecting to Kubernetes REST API (Minikube)
 
 - `minikube ip`
 - APIServer is on port 8443
