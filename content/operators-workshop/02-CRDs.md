@@ -55,7 +55,7 @@ spec:
 
 # API endpoints
 
-- Core group endpoint (also know as legacy group)
+- Core group endpoint (also known as legacy group)
 
 ```
 /api/v1/pods
