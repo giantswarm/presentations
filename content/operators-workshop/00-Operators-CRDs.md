@@ -1,3 +1,69 @@
+<!-- .slide: class="centered" -->
+# Developing Operators for Kubernetes
+
+by Pawel Kopiczko & Ross Fairbanks
+
+![Giant Swarm](/layout/img/giantswarm.png) <!-- .element: style="width: 100px; margin-right: 50px" -->
+![Kubernetes](/layout/img/kubernetes.png) <!-- .element: style="width: 90px; position: relative; top: -10px" -->
+
+---
+
+# Agenda
+
+1. Operators Overview
+2. Custom Resource Definition
+3. Operator Task
+4. Exercise 1. Implement using REST API
+5. Exercise 2. Implement using client-go
+
+---
+
+# What is an Operator
+
+- An application specific controller that extends the Kubernetes API
+- Manages a CRD (Custom Resource Definition) which replace TPRs (Third Party Resources)
+- CRD stores state and the operator performs operational tasks
+- Pattern first proposed by CoreOS in November 2016
+
+---
+
+# Example Operators
+
+- Etcd
+- Prometheus
+- Rook
+
+---
+
+# Giant Swarm Operators
+
+- azure-operator
+- aws-operator
+- kvm-operator
+- cert-operator
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/kvm-operator/1.png) <!-- .element: style="width: 80%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/kvm-operator/2.png) <!-- .element: style="width: 80%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/kvm-operator/3.png) <!-- .element: style="width: 80%;" -->
+
+---
+
+<!-- .slide:  style="text-align: center;" -->
+![Cluster](/layout/img/diagrams/kvm-operator/4.png) <!-- .element: style="width: 80%;" -->
+
+---
+
 # Third Party Resources (Legacy)
 
 - First mechanism for extending Kubernetes
