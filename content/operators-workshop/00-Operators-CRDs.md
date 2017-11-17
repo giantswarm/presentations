@@ -18,6 +18,11 @@ by Pawel Kopiczko & Ross Fairbanks
 
 ---
 
+<!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
+# Operators Overview
+
+---
+
 # What is an Operator
 
 - An application specific controller that extends the Kubernetes API
@@ -37,7 +42,6 @@ by Pawel Kopiczko & Ross Fairbanks
 
 # Giant Swarm Operators
 
-- azure-operator
 - aws-operator
 - kvm-operator
 - cert-operator
@@ -61,6 +65,11 @@ by Pawel Kopiczko & Ross Fairbanks
 
 <!-- .slide:  style="text-align: center;" -->
 ![Cluster](/layout/img/diagrams/kvm-operator/4.png) <!-- .element: style="width: 80%;" -->
+
+---
+
+<!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
+# Custom Resource Definition
 
 ---
 
@@ -138,6 +147,11 @@ spec:
 ```
 /apis/stable.example.com/v1/crontabs
 ```
+
+---
+
+<!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
+# Custom Resource Definition
 
 ---
 

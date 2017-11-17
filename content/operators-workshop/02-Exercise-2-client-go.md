@@ -163,3 +163,18 @@ _, informer := cache.NewInformer(
 )
 informer.Run(make(chan struct{}))
 ```
+
+---
+
+# In-cluster mode
+
+```
+restConfig, err = rest.InClusterConfig()
+
+if err != nil { ... }
+```
+
+- Run deployment (check deployment.yaml)
+
+---
+
