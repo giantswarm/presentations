@@ -19,7 +19,6 @@ by Pawel Kopiczko & Ross Fairbanks
 ---
 
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
-
 # Operators Overview
 
 ---
@@ -152,7 +151,7 @@ spec:
 ---
 
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
-# Demo
+# Custom Resource Definition
 
 ---
 
