@@ -23,6 +23,24 @@ by Pawel Kopiczko & Ross Fairbanks
 
 ---
 
+# Tools
+
+- Minikube 0.23
+
+```
+$ minikube start --kubernetes-version 'v1.8.0'
+```
+- Go 1.9
+- Git
+- Git clone giantswarm/operator-workshop
+
+```
+$ git clone https://github.com/giantswarm/operator-workshop 
+    $GOPATH/src/github.com/giantswarm/operator-workshop
+```
+
+---
+
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom" -->
 # Operators Overview
 
