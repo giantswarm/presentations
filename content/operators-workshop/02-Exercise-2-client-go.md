@@ -113,14 +113,14 @@ import "k8s.io/apimachinery/pkg/runtime"
 import "k8s.io/apimachinery/pkg/runtime/serializer"
 
 restConfig = &rest.Config{
-
         ...,
-  
-        GroupVersion: &groupVersion,
-        ApiPatch:     "/apis",
-        ContentType:  runtime.ContentTypeJSON,
-        NegotiatedSerializer: serializer.DirectCodecFactory{
-                CodecFactory: serializer.NewCodecFactory(scheme),
+        APIPath:     "/apis",
+        ContentConfig: rest.ContentConfig{
+            GroupVersion: &groupVersion,
+            ContentType:  runtime.ContentTypeJSON,
+            NegotiatedSerializer: serializer.DirectCodecFactory{
+                    CodecFactory: serializer.NewCodecFactory(scheme),
+            },
         },
 }
 
