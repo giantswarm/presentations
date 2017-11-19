@@ -174,7 +174,9 @@ restConfig, err = rest.InClusterConfig()
 if err != nil { ... }
 ```
 
-- Run deployment (check deployment.yaml)
+- Run deployment
 
----
+```
+$ kubectl apply -f manifest/operator.yaml
+```
 

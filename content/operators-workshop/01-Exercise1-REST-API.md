@@ -63,8 +63,7 @@ $ minikube start --kubernetes-version 'v1.8.0'
 # Create PostgreSQL database
 
 ```
-$ kubectl apply -f 
-    https://raw.githubusercontent.com/giantswarm/operator-workshop/master/postgresql.yaml
+$ kubectl apply -f manifest/postgresql.yaml
 ```
 
 ---
