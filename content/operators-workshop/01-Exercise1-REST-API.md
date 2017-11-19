@@ -89,8 +89,8 @@ import "crypto/tls"
 import "crypto/x509"
 
 crt, err := tls.LoadX509KeyPair(
-        ".minikube/apiserver.crt",
-        ".minikube/apiserver.key",
+        "/home/user/.minikube/apiserver.crt",
+        "/home/user/.minikube/apiserver.key",
 )
 if err != nil { ... }
 
@@ -134,7 +134,7 @@ crdJson := `{
         "spec": ...
 }`
 
-url := "MINIKUBE_IP" + /* $(minikube ip) */
+url := "https://$(MINIKUBE_IP):8443" + // $(minikube ip)
         "/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions"
 res, err := k8sClient.Post(
         url, 
@@ -148,7 +148,7 @@ res, err := k8sClient.Post(
 # Wait for custom resource
 
 ```
-url := "MINIKUBE_IP" + // $(minikube ip)
+url := "https://$(MINIKUBE_IP):8443" + // $(minikube ip)
         "/apis/GROUP/VERSION/PLURAL"
 
 res, err := k8sClient.Get(url)
@@ -179,7 +179,7 @@ type PostgreSQLConfigList struct {
 
 ```
 for {
-        url := "MINIKUBE_IP" + // $(minikube ip)
+        url := "https://$(MINIKUBE_IP):8443" + // $(minikube ip)
                 "/apis/GROUP/VERSION/PLURAL"
 
         res, err := k8sClient.Get(url)

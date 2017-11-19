@@ -10,11 +10,11 @@ import "k8s.io/client-go/rest
 import "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 
 restConfig = &rest.Config{
-        Host: "MINIKUBE_IP", // $(minikube ip)
+        Host: "https://$(MINIKUBE_IP):8443", // $(minikube ip)
         TLSClientConfig: rest.TLSClientConfig{
-                CertFile: ".minikube/apiserver.crt",
-                KeyFile:  ".minikube/apiserver.key",
-                CAFile:   ".minikube/ca.crt",
+                CertFile: "/home/user/.minikube/apiserver.crt",
+                KeyFile:  "/home/user/.minikube/apiserver.key",
+                CAFile:   "/home/user/.minikube/ca.crt",
         },
 }
 
