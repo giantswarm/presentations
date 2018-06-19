@@ -9,7 +9,7 @@
 - Just separation
 - Good for keeping order
 - Good for separating environments
-- Can help with isolation
+- First building block of in-cluster isolation
 
 ---
 
@@ -45,6 +45,7 @@
   - tokens
 - Special type: `imagePullSecrets`
 - Are held in `tmpfs` and only on nodes that need them
+- Should enable encryption at rest
 
 ---
 

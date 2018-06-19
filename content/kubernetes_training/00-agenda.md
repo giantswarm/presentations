@@ -24,9 +24,3 @@ by Tobias Bradtke & Puja Abbassi
 5. Rolling Updates & Multiple Environments
 6. Advanced Concepts in Kubernetes
 7. Outlook
-
----
-
-# Croissants, Coffee, and Introductions
-
-![Coffee](/layout/img/coffee.png) <!-- .element: style="width: 150px;" -->
