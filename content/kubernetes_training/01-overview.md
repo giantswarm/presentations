@@ -124,7 +124,7 @@ Batch execution
 Note:
 https://github.com/kubernetes/kubernetes
 
-~900 Contributors and growing
+~1700 Contributors and growing
 from Google, Red Hat, Microsoft, CoreOS, Mesosphere, and many more
 
 Companies using

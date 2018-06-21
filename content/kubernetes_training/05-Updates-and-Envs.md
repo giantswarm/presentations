@@ -26,15 +26,18 @@
 
 # Blue/Green & Canary Deployments
 
-Blue/Green & Canary Deployments can be implemented in two ways:
-- With `kubectl rollout pause` and `kubectl rollout resume`
-- With a temporary second Deployment (with fewer replicas)
+Blue/Green & Canary Deployments can be implemented in three ways:
+
+- With `kubectl rollout pause` and `kubectl rollout resume` (Don't!)
+- With a (temporary) second Deployment
+- With a Service Mesh (Istio or Linkerd)
 
 ---
 
 # Multiple Environments & Isolation
 
 How many environments do you need?
+
 - How many stages?
 - How many teams?
 
@@ -45,12 +48,15 @@ What level of isolation do you need?
 # Isolation by Namespaces
 
 Default:
+
 - Isolation is just a default to own namespace
-- DNS access over namespaces still possible
+- DNS and network access over namespaces still possible
 
 Additional Isolation:
+
 - Network Policies
 - Admission Rules & RBAC
+- Pod Security Policies (to prevent privilege escalation)
 - Isolation by Nodes (against resource competition)
 
 ---
