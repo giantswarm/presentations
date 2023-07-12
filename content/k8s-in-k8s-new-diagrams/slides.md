@@ -233,7 +233,7 @@ Create k8s clusters on AWS based on a TPR
 <!-- .slide: data-background-image="/layout/img/city_skyline_buildings_2.svg" data-background-size="50% 50%" data-background-position="bottom right -50%" -->
 # Worker
 
-* NGINX ingress controller running on a specific port on some of the workers
+* Ingress NGINX Controller running on a specific port on some of the workers
 * Loadbalancer checks if the ingress controller is listening and sends traffic to it
 
 ---
@@ -325,4 +325,3 @@ Having Giantnetes and all guest clusters running self-hosted will further ease t
 Timo Derstappen
 
 @teemow
-
